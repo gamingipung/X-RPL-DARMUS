@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NAMA-NAMA MURID</title>
+
+  <style>
+    
+    body {
+      background: linear-gradient(135deg,
+        #0f172a,
+        #1e3a8a,
+        #0f172a);
+      min-height: 100vh;
+    }
+
+    .header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2px;
+    }
+    .h2-header {
+      color: white;
+      margin: 5px;
+    }
+
+    .ground {
+      background: rgba(225,225,255,0.08);
+      border: 5px solid rgba(225,225,255,0.08);
+      border-radius: 30px;
+      height: 950px;
+      
+      display: flex;
+      flex-direction: column;
+    }
+    .content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .img-content {
+      height: 200px;
+      width: 250px;
+      border-radius: 25px;
+    }
+
+    table {
+      width: 460px;
+      border-collapse: collapse;
+      margin: 25px auto;
+    }
+
+    th, td {
+      color: white;
+      padding: 10px;
+      
+      white-space: nowrap;
+      text-align: left;
+      border: 1px solid white;
+    }
+    a {
+      color: #6fd3ff;
+      text-decoration: none;
+      font-size: 17px;
+    }
+    
+    .container {
+      padding: 10px;
+    }
+    .back {
+      display: inline-block;
+      padding: 12px;
+      border: 1px solid rgba(255,255,255,0.5);
+      color: lightblue;
+      margin: 20px;
+    }
+    .pagination {
+      margin-top: auto;
+      text-align: left;
+      padding-bottom: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 20px;
+      color: white;
+    }
+
+    .pagination button {
+      font-size: 25px;
+      padding: 8px 15px;
+      margin: 5px;
+  
+     background: #1e3a8a;
+     color: white;
+  
+     border: none;
+     border-radius: 8px;
+  
+     cursor: pointer;
+    }
+    .table-box {
+      flex: 1;
+    }
+
+#pageInfo {
+  margin: 0 10px;
+}
+
+  </style>
+</head>
+<body>
+  <div class="ground">
+    
+  <div class="container">
+    <p><a href="index.html" class="back">&lt; Kembali</a></p>
+  </div>
+    
+  <div class="header">
+    <h2 class="h2-header">WELCOME TO WEBSITE</h2>
+    <h2 class="h2-header">X RPL DARMUS</h2>
+  </div>
+    
+    <div class="content">
+      <img src="foto.jpg" class="img-content"/>
+    </div>
+    
+   <div class="table-box">
+     <table id="dataTable">
+    
+    <tr>
+      <th>No</th>
+      <th>Nama</th>
+      <th>No.HP</th>
+    </tr>
+    
+    <tr>
+      <td>1</td>
+      <td>AKBAR SYAHRONI</td>
+      <td><a href="https://wa.me/6289670356899" target="_blank">089670356899</a></td>
+    </tr>
+    
+    <tr>
+      <td>2</td>
+      <td>LUKMAN ADIL</td>
+      <td><a href="https://wa.me/6285780771152" target="_blank">085780771152</a></td>
+    </tr>
+    
+    <tr>
+      <td>3</td>
+      <td>M.NAZRIL</td>
+      <td>Tidak Diketahui</td>
+    </tr>
+    
+    <tr>
+      <td>4</td>
+      <td>M.RIFKI AL FADJERIANSYAH</td>
+      <td><a href="https://wa.me/62895428376696" target="_blank">0895428376696</a></td>
+    </tr>
+    
+    <tr>
+      <td>5</td>
+      <td>M.DIKA</td>
+      <td><a href="https://wa.me/62895635000299" target="_blank">0895635000299</a></td>
+    </tr>
+    
+    <tr>
+      <td>6</td>
+      <td>M.AKBAR</td>
+      <td><a href="https://wa.me/62895320638112" target="_blank">0895320638112</a></td>
+    </tr>
+    
+    <tr>
+      <td>7</td>
+      <td>RIZAL FAHRI PRATAMA</td>
+      <td>Tidak Diketahui</td>
+    </tr>
+    
+    <tr>
+      <td>8</td>
+      <td>Nama Murid</td>
+      <td>Tidak Diketahui</td>
+    </tr>
+    
+    <tr>
+      <td>9</td>
+      <td>Nama Murid</td>
+      <td>Tidak Diketahui</td>
+    </tr>
+    
+    <tr>
+      <td>10</td>
+      <td>Nama Murid</td>
+      <td>Tidak Diketahui</td>
+    </tr>
+    
+    <tr>
+      <td>11</td>
+      <td>Nama Murid</td>
+      <td>Tidak Diketahui</td>
+    </tr>
+    
+    <tr>
+      <td>12</td>
+      <td>Nama Murid</td>
+      <td>Tidak Diketahui</td>
+    </tr>
+    
+    <tr>
+      <td>13</td>
+      <td>Nama Murid</td>
+      <td>Tidak Diketahui</td>
+    </tr>
+    
+    <tr>
+      <td>14</td>
+      <td>Nama Murid</td>
+      <td>Tidak Diketahui</td>
+    </tr>
+    
+    <tr>
+      <td>15</td>
+      <td>Nama Murid</td>
+      <td>Tidak Diketahui</td>
+    </tr>
+    
+    <tr>
+      <td>16</td>
+      <td>Nama Murid</td>
+      <td>Tidak Diketahui</td>
+    </tr>
+    
+    <tr>
+      <td>17</td>
+      <td>Nama Murid</td>
+      <td>Tidak Diketahui</td>
+    </tr>
+    
+    <tr>
+      <td>18</td>
+      <td>Nama Murid</td>
+      <td>Tidak Diketahui</td>
+    </tr>
+    
+    <tr>
+      <td>19</td>
+      <td>Nama Murid</td>
+      <td>Tidak Diketahui</td>
+    </tr>
+    
+    <tr>
+      <td>20</td>
+      <td>Nama Murid</td>
+      <td>Tidak Diketahui</td>
+    </tr>
+    
+    <tr>
+      <td>21</td>
+      <td>Nama Murid</td>
+      <td>Tidak Diketahui</td>
+    </tr>
+    
+    <tr>
+      <td>22</td>
+      <td>Nama Murid</td>
+      <td>Tidak Diketahui</td>
+    </tr>
+    
+    <tr>
+      <td>23</td>
+      <td>Nama Murid</td>
+      <td>Tidak Diketahui</td>
+    </tr>
+    
+    <tr>
+      <td>24</td>
+      <td>Nama Murid</td>
+      <td>Tidak Diketahui</td>
+    </tr>
+    
+    <tr>
+      <td>25</td>
+      <td>Nama Murid</td>
+      <td>Tidak Diketahui</td>
+    </tr>
+    
+    <tr>
+      <td>26</td>
+      <td>Nama Murid</td>
+      <td>Tidak Diketahui</td>
+    </tr>
+    
+    <tr>
+      <td>27</td>
+      <td>Nama Murid</td>
+      <td>Tidak Diketahui</td>
+    </tr>
+    
+    <tr>
+      <td>28</td>
+      <td>Nama Murid</td>
+      <td>Tidak Diketahui</td>
+    </tr>
+    
+    <tr>
+      <td>29</td>
+      <td>Nama Murid</td>
+      <td>Tidak Diketahui</td>
+    </tr>
+    
+    <tr>
+      <td>30</td>
+      <td>Nama Murid</td>
+      <td>Tidak Diketahui</td>
+    </tr>
+    
+     <tr>
+      <td>31</td>
+      <td>Nama Murid</td>
+      <td>Tidak Diketahui</td>
+    </tr>
+    
+    <tr>
+      <td>32</td>
+      <td>Nama Murid</td>
+      <td>Tidak Diketahui</td>
+    </tr>
+    
+    <tr>
+      <td>33</td>
+      <td>Nama Murid</td>
+      <td>Tidak Diketahui</td>
+    </tr>
+    
+    <tr>
+      <td>34</td>
+      <td>Nama Murid</td>
+      <td>Tidak Diketahui</td>
+    </tr>
+    
+    <tr>
+      <td>35</td>
+      <td>Nama Murid</td>
+      <td>Tidak Diketahui</td>
+    </tr>
+    
+    <tr>
+      <td>36</td>
+      <td>Nama Murid</td>
+      <td>Tidak Diketahui</td>
+    </tr>
+    
+    </table>
+    </div>
+    
+    <div class="pagination">
+      <button onclick="prevPage()">&lt;</button>
+      
+      <span id="pageInfo">1/3</span>
+      
+      <button onclick="nextPage()">&gt;</button>
+      
+    </div>
+    
+   </div>
+  </div>
+  <script>
+    
+let currentPage = 1;
+let rowsPerPage = 10;
+
+let table = document.getElementById("dataTable");
+let rows = table.getElementsByTagName("tr");
+
+let totalPages = Math.ceil((rows.length - 1) / rowsPerPage);
+
+function showPage(page) {
+  
+  let start = (page - 1) * rowsPerPage + 1;
+  let end = start + rowsPerPage;
+  
+  for (let i = 1; i < rows.length; i++) {
+    
+    if (i >= start && i < end) {
+      rows[i].style.display = "";
+    }
+    else {
+      rows[i].style.display = "none";
+    }
+    
+  }
+  
+  document.getElementById("pageInfo").innerText =
+    page + "/" + totalPages;
+}
+
+function nextPage() {
+  
+  if (currentPage < totalPages) {
+    currentPage++;
+    showPage(currentPage);
+  }
+  
+}
+
+function prevPage() {
+  
+  if (currentPage > 1) {
+    currentPage--;
+    showPage(currentPage);
+  }
+  
+}
+
+showPage(1);
+    
+  </script>
+</body>
+</html>
