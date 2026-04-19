@@ -54,7 +54,6 @@ body {
   backdrop-filter: blur(15px);
   border-radius: 25px;
   padding: 25px;
-  white-space: nowrap;
   color: white;
   text-align: left;
 }
@@ -64,7 +63,7 @@ body {
 }
 .card h3 {
   font-size: 16px;
-  white-space: nowrap;
+  word-break: break-word;
 }
 .card a {
   color: #6fd3ff;
