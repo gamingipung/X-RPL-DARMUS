@@ -3,7 +3,7 @@ body {
       #0f172a,
       #1e3a8a,
       #0f172a);
-  
+  min-width: 1024px;
   height: 100vh;
 }
 
