@@ -12,7 +12,7 @@ body {
   background: rgba(255, 255, 255, 0.08);
   border: 5px solid rgba(255, 255, 255, 0.08);
   border-radius: 30px;
-  min-height: 100vh;
+  min-height: 90vh;
 }
 
 .header {
@@ -41,7 +41,7 @@ body {
 
 .menu {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px,1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
   justify-content: center;
   align-items: center;
   gap: 15px;
@@ -62,8 +62,9 @@ body {
   margin: 10px 0 5px 0;
 }
 .card h3 {
-  font-size: 16px;
+  font-size: 15px;
   word-break: break-word;
+  
 }
 .card a {
   color: #6fd3ff;

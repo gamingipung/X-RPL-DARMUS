@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pesan ANONIM</title>
+
+<style>
+body {
+  background: linear-gradient(135deg,
+      #0f172a,
+      #1e3a8a,
+      #0f172a);
+  min-height: 100vh;
+}
+.ground {
+  background: rgba(255, 255, 255, 0.08);
+  border: 5px solid rgba(255, 255, 255, 0.08);
+  border-radius: 30px;
+  margin: 50px 50px 20px 50px;
+  min-height: 40vh;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ground-2 {
+  background: rgba(255, 255, 255, 0.08);
+  border: 5px solid rgba(255, 255, 255, 0.08);
+  border-radius: 30px;
+  margin: 10px 50px 50px;
+  overflow-y: auto;
+  height: 40vh;
+}
+.anom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin-bottom: 5px;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  height: 15vh;
+}
+input, textarea {
+  width: 75%;
+  padding: 15px;
+  border-radius: 8px;
+  margin: 10px 0;
+}
+button {
+  font-size: 16px;
+  color: white;
+  background: rgba(255, 255, 255, 0.08);
+  width: 80%;
+  margin: 15px 0;
+  padding: 10px;
+  padding-top: 10px;
+  border-radius: 80px;
+}
+.pesan {
+  background: rgba(255, 255, 255, 0.08);
+  color: white;
+  min-height: 10vh;
+  padding: 20px;
+  font-size: 20px;
+  border-radius: 20px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.text {
+  padding: 10px;
+}
+.waktu {
+  padding: 10px;
+  font-size: 16px;
+  color: white;
+  margin-top: auto;
+}
+</style>
+
+</head>
+<body>
+  <div class="ground">
+    
+    <div class="header">
+      <h2>KIRIM PESAN ANONIM </h2>
+    </div>
+    
+    <input type="text" id="nama" placeholder="Nama">
+    
+    <textarea id="pesan" placeholder="Hallo Semua"></textarea>
+    
+    <button onclick="kirimPesan()">Kirim</button>
+    
+  </div>
+  
+  <div class="anom">
+    <h2>PESAN ANONIM</h2>
+  </div>
+  
+  <div class="ground-2">
+    
+    <div id="daftarPesan"></div>
+  </div>
+
+<script type="module">
+
+import { initializeApp } from 
+"https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+
+import { getFirestore,
+collection,
+addDoc,
+onSnapshot,
+query,
+orderBy
+} from 
+"https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyCZUYIG0-TIZIa7EoyfL3ewr6dOMZbtvKo",
+  authDomain: "pesan-anonim-2c104.firebaseapp.com",
+  projectId: "pesan-anonim-2c104",
+  storageBucket: "pesan-anonim-2c104.firebasestorage.app",
+  messagingSenderId: "5943673763",
+  appId: "1:5943673763:web:17f5c13c56a60c34a4d016",
+  measurementId: "G-PJTV77S22C"
+};
+
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+
+function ambilWaktu() {
+  let s = new Date();
+  let jam = s.getHours().toString().padStart(2,'0');
+  let menit = s.getMinutes().toString().padStart(2,'0');
+  return jam + ":" + menit;
+}
+function ambilTanggal() {
+  let s = new Date();
+  let tgl = s.getDate();
+  let bln = (s.getMonth() + 1).toString().padStart(2,"0");
+  let thn = s.getFullYear();
+  return tgl + "/"  + bln + "/" + thn;
+}
+
+window.kirimPesan = async function() {
+
+  let namaInput =
+    document.getElementById("nama").value.trim();
+
+  let pesanInput =
+    document.getElementById("pesan").value.trim();
+
+  if (pesanInput === "") return;
+
+  let nama =
+    namaInput === "" ? "Anonim" : namaInput;
+
+  await addDoc(collection(db,"pesan"), {
+    nama: nama,
+    isi: pesanInput,
+    waktu: ambilWaktu(),
+    tanggal: ambilTanggal(),
+    time: Date.now()
+  });
+
+  document.getElementById("pesan").value = "";
+};
+
+const q = query(
+  collection(db,"pesan"),
+  orderBy("time", "desc")
+);
+
+onSnapshot(q, (snapshot) => {
+
+  let box =
+    document.getElementById("daftarPesan");
+
+  box.innerHTML = "";
+
+  snapshot.forEach(doc => {
+
+    let p = doc.data();
+
+    box.innerHTML += `
+  <div class="pesan">
+     <div class="text">
+        ${p.isi}
+      </div>
+      
+    <div class="waktu">
+          ${p.nama} | ${p.tanggal} ${p.waktu}
+       </div>
+     </div>
+    `;
+  });
+
+});
+
+</script>
+
+</body>
+</html>

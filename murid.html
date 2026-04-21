@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>NAMA-NAMA MURID</title>
-
+  
   <style>
-    
     body {
       background: linear-gradient(135deg,
-        #0f172a,
-        #1e3a8a,
-        #0f172a);
+          #0f172a,
+          #1e3a8a,
+          #0f172a);
       min-height: 100vh;
     }
-
+    
     .header {
       display: flex;
       flex-direction: column;
@@ -22,38 +22,42 @@
       justify-content: center;
       padding: 2px;
     }
+    
     .h2-header {
       color: white;
       margin: 5px;
     }
-
+    
     .ground {
-      background: rgba(225,225,255,0.08);
-      border: 5px solid rgba(225,225,255,0.08);
+      background: rgba(225, 225, 255, 0.08);
+      border: 5px solid rgba(225, 225, 255, 0.08);
       border-radius: 30px;
-      min-height: 100vh;
+      min-height: 90vh;
       
       display: flex;
       flex-direction: column;
     }
+    
     .content {
       display: flex;
       align-items: center;
       justify-content: center;
     }
+    
     .img-content {
       height: 200px;
       width: 250px;
       border-radius: 25px;
     }
-
+    
     table {
       width: 100%;
       border-collapse: collapse;
       margin: 25px auto;
     }
-
-    th, td {
+    
+    th,
+    td {
       color: white;
       padding: 10px;
       
@@ -61,6 +65,7 @@
       text-align: left;
       border: 1px solid white;
     }
+    
     a {
       color: #6fd3ff;
       text-decoration: none;
@@ -70,13 +75,15 @@
     .container {
       padding: 10px;
     }
+    
     .back {
       display: inline-block;
       padding: 12px;
-      border: 1px solid rgba(255,255,255,0.5);
+      border: 1px solid rgba(255, 255, 255, 0.5);
       color: lightblue;
       margin: 20px;
     }
+    
     .pagination {
       margin-top: auto;
       text-align: left;
@@ -87,273 +94,280 @@
       font-size: 20px;
       color: white;
     }
-
+    
     .pagination button {
       font-size: 25px;
       padding: 8px 15px;
       margin: 5px;
-  
-     background: #1e3a8a;
-     color: white;
-  
-     border: none;
-     border-radius: 8px;
-  
-     cursor: pointer;
+      
+      background: #1e3a8a;
+      color: white;
+      
+      border: none;
+      border-radius: 8px;
+      
+      cursor: pointer;
     }
+    
     .table-box {
       flex: 1;
       overflow-y: auto;
     }
-
-#pageInfo {
-  margin: 0 10px;
-}
-
+    
+    #pageInfo {
+      margin: 0 10px;
+    }
   </style>
 </head>
+
 <body>
   <div class="ground">
     
-  <div class="container">
-    <p><a href="index.html" class="back">&lt; Kembali</a></p>
-  </div>
-    
-  <div class="header">
-    <h2 class="h2-header">WELCOME TO WEBSITE</h2>
-    <h2 class="h2-header">X RPL DARMUS</h2>
-  </div>
-    
-    <div class="content">
-      <img src="foto.jpg" class="img-content"/>
+    <div class="container">
+      <p><a href="index.html" class="back">&lt; Kembali</a></p>
     </div>
     
-   <div class="table-box">
-     <table id="dataTable">
+    <div class="header">
+      <h2 class="h2-header">NAMA-NAMA MURID</h2>
+      <h2 class="h2-header">X RPL DARMUS</h2>
+    </div>
     
-    <tr>
-      <th>No</th>
-      <th>Nama</th>
-      <th>No.HP</th>
-    </tr>
+    <div class="content">
+      <img src="foto.jpg" class="img-content" />
+    </div>
     
-    <tr>
-      <td>1</td>
-      <td>AKBAR SYAHRONI</td>
-      <td><a href="https://wa.me/6289670356899" target="_blank">089670356899</a></td>
-    </tr>
-    
-    <tr>
-      <td>2</td>
-      <td>LUKMAN ADIL</td>
-      <td><a href="https://wa.me/6285780771152" target="_blank">085780771152</a></td>
-    </tr>
-    
-    <tr>
-      <td>3</td>
-      <td>M.NAZRIL</td>
-      <td>Tidak Diketahui</td>
-    </tr>
-    
-    <tr>
-      <td>4</td>
-      <td>M.RIFKI AL FADJERIANSYAH</td>
-      <td><a href="https://wa.me/62895428376696" target="_blank">0895428376696</a></td>
-    </tr>
-    
-    <tr>
-      <td>5</td>
-      <td>M.DIKA</td>
-      <td><a href="https://wa.me/62895635000299" target="_blank">0895635000299</a></td>
-    </tr>
-    
-    <tr>
-      <td>6</td>
-      <td>M.AKBAR</td>
-      <td><a href="https://wa.me/62895320638112" target="_blank">0895320638112</a></td>
-    </tr>
-    
-    <tr>
-      <td>7</td>
-      <td>RIZAL FAHRI PRATAMA</td>
-      <td>Tidak Diketahui</td>
-    </tr>
-    
-    <tr>
-      <td>8</td>
-      <td>Nama Murid</td>
-      <td>Tidak Diketahui</td>
-    </tr>
-    
-    <tr>
-      <td>9</td>
-      <td>Nama Murid</td>
-      <td>Tidak Diketahui</td>
-    </tr>
-    
-    <tr>
-      <td>10</td>
-      <td>Nama Murid</td>
-      <td>Tidak Diketahui</td>
-    </tr>
-    
-    <tr>
-      <td>11</td>
-      <td>Nama Murid</td>
-      <td>Tidak Diketahui</td>
-    </tr>
-    
-    <tr>
-      <td>12</td>
-      <td>Nama Murid</td>
-      <td>Tidak Diketahui</td>
-    </tr>
-    
-    <tr>
-      <td>13</td>
-      <td>Nama Murid</td>
-      <td>Tidak Diketahui</td>
-    </tr>
-    
-    <tr>
-      <td>14</td>
-      <td>Nama Murid</td>
-      <td>Tidak Diketahui</td>
-    </tr>
-    
-    <tr>
-      <td>15</td>
-      <td>Nama Murid</td>
-      <td>Tidak Diketahui</td>
-    </tr>
-    
-    <tr>
-      <td>16</td>
-      <td>Nama Murid</td>
-      <td>Tidak Diketahui</td>
-    </tr>
-    
-    <tr>
-      <td>17</td>
-      <td>Nama Murid</td>
-      <td>Tidak Diketahui</td>
-    </tr>
-    
-    <tr>
-      <td>18</td>
-      <td>Nama Murid</td>
-      <td>Tidak Diketahui</td>
-    </tr>
-    
-    <tr>
-      <td>19</td>
-      <td>Nama Murid</td>
-      <td>Tidak Diketahui</td>
-    </tr>
-    
-    <tr>
-      <td>20</td>
-      <td>Nama Murid</td>
-      <td>Tidak Diketahui</td>
-    </tr>
-    
-    <tr>
-      <td>21</td>
-      <td>Nama Murid</td>
-      <td>Tidak Diketahui</td>
-    </tr>
-    
-    <tr>
-      <td>22</td>
-      <td>Nama Murid</td>
-      <td>Tidak Diketahui</td>
-    </tr>
-    
-    <tr>
-      <td>23</td>
-      <td>Nama Murid</td>
-      <td>Tidak Diketahui</td>
-    </tr>
-    
-    <tr>
-      <td>24</td>
-      <td>Nama Murid</td>
-      <td>Tidak Diketahui</td>
-    </tr>
-    
-    <tr>
-      <td>25</td>
-      <td>Nama Murid</td>
-      <td>Tidak Diketahui</td>
-    </tr>
-    
-    <tr>
-      <td>26</td>
-      <td>Nama Murid</td>
-      <td>Tidak Diketahui</td>
-    </tr>
-    
-    <tr>
-      <td>27</td>
-      <td>Nama Murid</td>
-      <td>Tidak Diketahui</td>
-    </tr>
-    
-    <tr>
-      <td>28</td>
-      <td>Nama Murid</td>
-      <td>Tidak Diketahui</td>
-    </tr>
-    
-    <tr>
-      <td>29</td>
-      <td>Nama Murid</td>
-      <td>Tidak Diketahui</td>
-    </tr>
-    
-    <tr>
-      <td>30</td>
-      <td>Nama Murid</td>
-      <td>Tidak Diketahui</td>
-    </tr>
-    
-     <tr>
-      <td>31</td>
-      <td>Nama Murid</td>
-      <td>Tidak Diketahui</td>
-    </tr>
-    
-    <tr>
-      <td>32</td>
-      <td>Nama Murid</td>
-      <td>Tidak Diketahui</td>
-    </tr>
-    
-    <tr>
-      <td>33</td>
-      <td>Nama Murid</td>
-      <td>Tidak Diketahui</td>
-    </tr>
-    
-    <tr>
-      <td>34</td>
-      <td>Nama Murid</td>
-      <td>Tidak Diketahui</td>
-    </tr>
-    
-    <tr>
-      <td>35</td>
-      <td>Nama Murid</td>
-      <td>Tidak Diketahui</td>
-    </tr>
-    
-    <tr>
-      <td>36</td>
-      <td>Nama Murid</td>
-      <td>Tidak Diketahui</td>
-    </tr>
-    
-    </table>
+    <div class="table-box">
+      <table id="dataTable">
+        
+        <tr>
+          <th>No</th>
+          <th>Nama</th>
+          <th>No.HP</th>
+        </tr>
+        
+        <tr>
+          <td>1</td>
+          <td>AKBAR SYAHRURONI</td>
+          <td><a href="https://wa.me/6289670356899" target="_blank">089670356899</a></td>
+        </tr>
+        
+        <tr>
+          <td>2</td>
+          <td>ALIKHA ODITA FENDRY</td>
+          <td><a href="https://wa.me/6283836536931">083836536931</a></td>
+        </tr>
+        
+        <tr>
+          <td>3</td>
+          <td>ANI SARAH</td>
+          <td><a href="https://wa.me/6283147914226">083147914226</a></td>
+        </tr>
+        
+        <tr>
+          <td>4</td>
+          <td>ASSYIFA NOVIANTI</td>
+          <td><a href="https://wa.me/"></a>Tidak Diketahui</td>
+        </tr>
+        
+        <tr>
+          <td>5</td>
+          <td>FADILAH FIKRILIANA</td>
+          <td><a href="https://wa.me/6289654549138">089654549138</a></td>
+        </tr>
+        
+        <tr>
+          <td>6</td>
+          <td>FARESA ANANDA PUTRI</td>
+          <td><a href="https://wa.me/6281400627855">081400627855</td>
+        </tr>
+        
+        <tr>
+          <td>7</td>
+          <td>FELLYZA ANASTASYA PUTRI</td>
+          <td><a href="https://wa.me/628987490611">08987490611</a></td>
+        </tr>
+        
+        <tr>
+          <td>8</td>
+          <td>HANANIA RAMADHANI</td>
+          <td><a href="https://wa.me/6281291973287">081291973287</a></td>
+        </tr>
+        
+        <tr>
+          <td>9</td>
+          <td>HELVI HARDIYANI</td>
+          <td><a href="https://wa.me/62895328925548" target="_blank">0895328925548</a></td>
+        </tr>
+        
+        <tr>
+          <td>10</td>
+          <td>JAHRA</td>
+          <td><a href="https://wa.me/"></a>Tidak Diketahui</td>
+        </tr>
+        
+        <tr>
+          <td>11</td>
+          <td>LUQMAN ADIL UBAIDILLAH</td>
+          <td><a href="https://wa.me/6285780771152" target="_blank">085780771152</a></td>
+        </tr>
+        
+        <tr>
+          <td>12</td>
+          <td>M. NAZRIL</td>
+          <td><a href="https://wa.me/"></a>Tidak Diketahui</td>
+        </tr>
+        
+        <tr>
+          <td>13</td>
+          <td>M. RIFKI AL-FADJERIANSYAH</td>
+          <td><a href="https://wa.me/62895428376696" target="_blank">0895428376696</a></td>
+        </tr>
+        
+        <tr>
+          <td>14</td>
+          <td>MAYA</td>
+          <td><a href="https://wa.me/"></a>Tidak Diketahui</td>
+        </tr>
+        
+        <tr>
+          <td>15</td>
+          <td>MELANI PUTRI</td>
+          <td><a href="https://wa.me/6281210264949" target="_blank">081210264949</a></td>
+        </tr>
+        
+        <tr>
+          <td>16</td>
+          <td>MERDIANA</td>
+          <td><a href="https://wa.me/"></a>Tidak Diketahui</td>
+        </tr>
+        
+        <tr>
+          <td>17</td>
+          <td>MERDIANTI</td>
+          <td><a href="https://wa.me/"></a>Tidak Diketahui</td>
+        </tr>
+        
+        <tr>
+          <td>18</td>
+          <td>MIRANDA OKTAVIANI</td>
+          <td><a href="https://wa.me/62895400993167">0895400993167</a></td>
+        </tr>
+        
+        <tr>
+          <td>19</td>
+          <td>MUHAMMAD AKBAR</td>
+          <td><a href="https://wa.me/62895320638112" target="_blank">0895320638112</a></td>
+        </tr>
+        
+        <tr>
+          <td>20</td>
+          <td>MUHAMMAD DIKA</td>
+          <td><a href="https://wa.me/62895635000299" target="_blank">0895635000299</a></td>
+        </tr>
+        
+        <tr>
+          <td>21</td>
+          <td>NAYSILA SRI RAHAYU</td>
+          <td><a href="https://wa.me/628815355097">08815355097</td>
+        </tr>
+        
+        <tr>
+          <td>22</td>
+          <td>NAZWA AULIA</td>
+          <td><a href="https://wa.me/6285283528776">085283528776</a></td>
+        </tr>
+        
+        <tr>
+          <td>23</td>
+          <td>NEISYA SHAKINA AULIA HENDRAWAN</td>
+          <td><a href="https://wa.me/628881142379">08881142379</a></td>
+        </tr>
+        
+        <tr>
+          <td>24</td>
+          <td>RANI AGUSTINA RAMADANI</td>
+          <td><a href="https://wa.me/"></a>Tidak Diketahui</td>
+        </tr>
+        
+        <tr>
+          <td>25</td>
+          <td>SALSA BILLAH</td>
+          <td><a href="https://wa.me/"></a>Tidak Diketahui</td>
+        </tr>
+        
+        <tr>
+          <td>26</td>
+          <td>SITI AMALIAH</td>
+          <td><a href="https://wa.me/6285892418819">085892418819</a></td>
+        </tr>
+        
+        <tr>
+          <td>27</td>
+          <td>SITI DUROTUL NABILA ALZAJILAH</td>
+          <td><a href="https://wa.me/6285719443095">085719443095</a></td>
+        </tr>
+        
+        <tr>
+          <td>28</td>
+          <td>SITI NUR ANNISA</td>
+          <td><a href="https://wa.me/"></a>Tidak Diketahui</td>
+        </tr>
+        
+        <tr>
+          <td>29</td>
+          <td>SITI NUR HABIBAH</td>
+          <td><a href="https://wa.me/6289683974400">089683974400</a></td>
+        </tr>
+        
+        <tr>
+          <td>30</td>
+          <td>SITI NURHASANAH</td>
+          <td><a href="https://wa.me/"></a>Tidak Diketahui</td>
+        </tr>
+        
+        <tr>
+          <td>31</td>
+          <td>SITI SAFIRA ANURIYYAH</td>
+          <td><a href="https://wa.me/"></a>Tidak Diketahui</td>
+        </tr>
+        
+        <tr>
+          <td>32</td>
+          <td>SITI SALWA AGUSTIN</td>
+          <td><a href="https://wa.me/62895360359427">0895360359427</a></td>
+        </tr>
+        
+        <tr>
+          <td>33</td>
+          <td>UMMI KHOLILAH PULUNGAN</td>
+          <td><a href="https://wa.me/6288219628386">088219628386</a></td>
+        </tr>
+        
+        <tr>
+          <td>34</td>
+          <td>ZULPA ALPAKUN NISA</td>
+          <td><a href="https://wa.me/6285283528809">085283528809</a></td>
+        </tr>
+        
+        <tr>
+          <td>35</td>
+          <td>FITROH LAUNA MAULIDA</td>
+          <td><a href="https://wa.me/"></a>Tidak Diketahui</td>
+        </tr>
+        
+        <tr>
+          <td>36</td>
+          <td>RIZAL FAHRI PRATAMA</td>
+          <td><a href="https://wa.me/6283142897932">083142897932</a></td>
+        </tr>
+        
+        <tr>
+          <td>37</td>
+          <td>VIKA AULIANISSA</td>
+          <td><a href="https://wa.me/6289518890849" target="_blank">089518890849</a></td>
+        </tr>
+        
+      </table>
     </div>
     
     <div class="pagination">
@@ -365,58 +379,57 @@
       
     </div>
     
-   </div>
+  </div>
   </div>
   <script>
+    let currentPage = 1;
+    let rowsPerPage = 10;
     
-let currentPage = 1;
-let rowsPerPage = 10;
-
-let table = document.getElementById("dataTable");
-let rows = table.getElementsByTagName("tr");
-
-let totalPages = Math.ceil((rows.length - 1) / rowsPerPage);
-
-function showPage(page) {
-  
-  let start = (page - 1) * rowsPerPage + 1;
-  let end = start + rowsPerPage;
-  
-  for (let i = 1; i < rows.length; i++) {
+    let table = document.getElementById("dataTable");
+    let rows = table.getElementsByTagName("tr");
     
-    if (i >= start && i < end) {
-      rows[i].style.display = "";
+    let totalPages = Math.ceil((rows.length - 1) / rowsPerPage);
+    
+    function showPage(page) {
+      
+      let start = (page - 1) * rowsPerPage + 1;
+      let end = start + rowsPerPage;
+      
+      for (let i = 1; i < rows.length; i++) {
+        
+        if (i >= start && i < end) {
+          rows[i].style.display = "";
+        }
+        else {
+          rows[i].style.display = "none";
+        }
+        
+      }
+      
+      document.getElementById("pageInfo").innerText =
+        page + "/" + totalPages;
     }
-    else {
-      rows[i].style.display = "none";
+    
+    function nextPage() {
+      
+      if (currentPage < totalPages) {
+        currentPage++;
+        showPage(currentPage);
+      }
+      
     }
     
-  }
-  
-  document.getElementById("pageInfo").innerText =
-    page + "/" + totalPages;
-}
-
-function nextPage() {
-  
-  if (currentPage < totalPages) {
-    currentPage++;
-    showPage(currentPage);
-  }
-  
-}
-
-function prevPage() {
-  
-  if (currentPage > 1) {
-    currentPage--;
-    showPage(currentPage);
-  }
-  
-}
-
-showPage(1);
+    function prevPage() {
+      
+      if (currentPage > 1) {
+        currentPage--;
+        showPage(currentPage);
+      }
+      
+    }
     
+    showPage(1);
   </script>
 </body>
+
 </html>
